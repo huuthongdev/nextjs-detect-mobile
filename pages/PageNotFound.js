@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { CpnIcon } from '../refs';
+import { CpnIcon, Link } from '../refs';
 
 class PageNotFound extends Component {
     static async getInitialProps(ctx) {
@@ -13,9 +13,11 @@ class PageNotFound extends Component {
                     <div className="content">
                         <CpnIcon name="ERROR_404" />
                         <p>Xin lỗi! Chúng tôi không tìm thấy trang bạn yêu cầu!</p>
-                        <div className="cta">
-                            Về trang chủ
-                        </div>
+                        <Link to="/">
+                            <a className="cta">
+                                Về trang chủ
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </Fragment>
