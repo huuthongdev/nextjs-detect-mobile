@@ -1,0 +1,27 @@
+@import "white/../_variables.scss";
+@import "light/../_variables.scss";
+@import "grey/../_variables.scss";
+@import "dark/../_variables.scss";
+@import "black/../_variables.scss";
+
+@import "red/../_variables.scss";
+@import "blue/../_variables.scss";
+@import "green/../_variables.scss";
+@import "yellow/../_variables.scss";
+
+@import "mainColor/../_variables.scss";
+
+@media only screen and(min-width: 769px) {
+  .mobile-wraper {
+    display: none;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .mobile-wraper {
+    display: block;
+  }
+
+
+  
+}

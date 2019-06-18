@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+// Variables
+@import "white/../_variables.scss";
+@import "light/../_variables.scss";
+@import "red/../_variables.scss";
+@import "dark/../_variables.scss";
+@import "grey/../_variables.scss";
+@import "black/../_variables.scss";
+@import "blue/../_variables.scss";
+@import "green/../_variables.scss";
+@import "yellow/../_variables.scss";
+@import "mainColor/../_variables.scss";
+
+@import "off-blue/../_variables.scss";
+@import "off-grey/../_variables.scss";
+@import "off-white/../_variables.scss";
+@import "off-dark/../_variables.scss";
+@import "off-red/../_variables.scss";
+
+// body {
+//     background: $light;
+// }
