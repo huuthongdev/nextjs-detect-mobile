@@ -10,7 +10,6 @@ class Home extends Component {
         if (!isServer) return { query }
 
         // Fetching data from server
-
         return {
             query,
         }
