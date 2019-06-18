@@ -15,12 +15,64 @@
 @import "yellow/../_variables.scss";
 @import "mainColor/../_variables.scss";
 
-@import "off-blue/../_variables.scss";
-@import "off-grey/../_variables.scss";
-@import "off-white/../_variables.scss";
-@import "off-dark/../_variables.scss";
-@import "off-red/../_variables.scss";
+@import "borderRadius/../_variables.scss";
 
-// body {
-//     background: $light;
-// }
+@import "btnHover/../_variables.scss";
+@import "scrollBar/../_variables.scss";
+
+body {
+  background: $light;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: $dark;
+  width: 100%;
+  height: 100vh;
+  @include scrollBar;
+}
+
+// ============================ PAGE NOT FOUND STYLE ================================
+.page-not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: $white;
+
+  .content {
+    background: $white;
+    border-radius: $borderRadius;
+    padding: 15px;
+    text-align: center;
+
+    svg {
+      width: 200px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: $dark;
+      margin-bottom: 35px;
+      font-size: 1.3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta {
+        cursor: pointer;
+        background: $red;
+        color: $white;
+        display: inline-flex;
+        height: 42px;
+        border-radius: 300px;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+
+        @include btnHover($red);
+    }
+  }
+}
+// ============================ End PAGE NOT FOUND STYLE ============================

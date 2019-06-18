@@ -11,3 +11,61 @@ $green: #14ad0d;
 $yellow: #f1c40f;
 
 $mainColor: $red;
+
+$borderRadius: 5px;
+$boxShadow: 0px 0px 7px
+  rgba(
+    $color: $dark,
+    $alpha: 0.2
+  );
+
+$zIndexHeader: 200;
+$zIndexNotificationBar: 300;
+$zIndexSearchBox: 400;
+$zIndexPopup: 500;
+$zIndexCpnGallery: 500;
+$zIndexCpnAlert: 600;
+$zIndexCpnConfirm: 550;
+
+@mixin scrollBar() {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: 0px;
+    border-radius: 0px;
+    background: none;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba($color: $dark, $alpha: 0.5);
+    border-radius: 3px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba($color: $dark, $alpha: 1);
+  }
+}
+
+@mixin btnFocus($color) {
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba($color: $color, $alpha: 1);
+  }
+}
+
+@mixin btnHover($color) {
+  &:hover {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba($color: $color, $alpha: 1);
+  }
+}

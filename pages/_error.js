@@ -10,13 +10,14 @@ class Error extends React.Component {
     render() {
         const { statusCode } = this.props;
         if (statusCode === 404) return <PageNotFound />
-        return (
-            <p>
-                {this.props.statusCode
-                    ? `An error ${this.props.statusCode} occurred on server`
-                    : 'An error occurred on client'}
-            </p>
-        );
+        return <PageNotFound />
+        // return (
+        //     <p>
+        //         {this.props.statusCode
+        //             ? `An error ${this.props.statusCode} occurred on server`
+        //             : 'An error occurred on client'}
+        //     </p>
+        // );
     }
 }
 
